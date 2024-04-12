@@ -30,41 +30,41 @@ graph LR
 ## Directory Structure
 > The node is a file when it has file extension.</br> 
 > Otherwise, the node represents a directory.
-```python
+```cpp
 |
-|__ UI  # SwiftUI Views
+|__ UI  // SwiftUI Views
 |
 |__ Internal
         |
         |__ DependencyInjector
         |           |
-        |           |__ Container.swift         # dependency injector instance
-        |           |__ EnvironmentKey.swift    # environment key definition
+        |           |__ Container.swift         // dependency injector instance
+        |           |__ EnvironmentKey.swift    // environment key definition
         |
-        |__ Entity      # Data Models
+        |__ Entity      // Data Models
         |
-        |__ Domain      # Interfaces
+        |__ Domain      // Interfaces
         |       |
-        |       |__ AppState.swift              # AppState interface definition
-        |       |__ Interactor.swift            # Interactor interface definition
-        |       |__ Repository.swift            # Repository interface definition
+        |       |__ AppState.swift              // AppState interface definition
+        |       |__ Interactor.swift            // Interactor interface definition
+        |       |__ Repository.swift            // Repository interface definition
         |
-        |__ AppState    # AppState implementation
+        |__ AppState    // AppState implementation
         |       |
-        |       |__ Mock                        # AppState mocked instance
-        |       |__ General                     # AppState general instance
+        |       |__ Mock                        // AppState mocked instance
+        |       |__ General                     // AppState general instance
         |
-        |__ Interactor  # Interactor implementation
+        |__ Interactor  // Interactor implementation
         |       |
-        |       |__ Mock                        # Interactor mocked instance
-        |       |__ General                     # Interactor general instance
+        |       |__ Mock                        // Interactor mocked instance
+        |       |__ General                     // Interactor general instance
         |
-        |__ Repository  # Repository implementation
+        |__ Repository  // Repository implementation
         |       |
-        |       |__ Mock                        # Repository mocked instance
-        |       |__ SQLite                      # Repository sqlite instance
+        |       |__ Mock                        // Repository mocked instance
+        |       |__ SQLite                      // Repository sqlite instance
         |
-        |__ Util        # Utilities
+        |__ Util        // Utilities
 ```
 
 ## Architecture
