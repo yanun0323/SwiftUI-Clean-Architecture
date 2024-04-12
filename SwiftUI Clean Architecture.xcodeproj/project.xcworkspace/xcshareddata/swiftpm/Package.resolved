@@ -1,0 +1,24 @@
+{
+  "originHash" : "090d41698b02ce9e97ddd56ed6107f98fb774d1ff7b223188e2a8d1593e06a9f",
+  "pins" : [
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "e78ae0220e17525a15ac68c697a155eb7a672a8e",
+        "version" : "0.15.0"
+      }
+    },
+    {
+      "identity" : "sworm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yanun0323/Sworm",
+      "state" : {
+        "revision" : "6c3a0b0780a040ad8a1526f8668b2e709e164f03",
+        "version" : "0.8.0"
+      }
+    }
+  ],
+  "version" : 3
+}
