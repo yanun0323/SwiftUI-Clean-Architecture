@@ -73,7 +73,9 @@ graph LR
 All component function
 ```mermaid
 graph TD
-    AI[AppState Instance]
+    subgraph " "
+        AI[AppState Instance]
+    end
 
     subgraph Dependency Injector
         I{Interactor}
@@ -83,14 +85,14 @@ graph TD
     subgraph " "
         AD{AppState\nDelegate}
         R{Repository}
-        II(Interactor Instance)
+        II[Interactor Instance]
     end
 
     subgraph " "
         DB[(Database)]
         C[(Cache)]
         N[(Network)]
-        RI(Repository Instance)
+        RI[Repository Instance]
         RI <==> DB & C & N
     end
 
@@ -108,7 +110,7 @@ graph TD
 Implement AppState interface with mock instance
 ```mermaid
 graph TD
-    AI[/Mock AppState Instance/]
+    AI((Mock AppState Instance))
 
     subgraph Dependency Injector
         I{Interactor}
@@ -118,14 +120,14 @@ graph TD
     subgraph " "
         AD{AppState\nDelegate}
         R{Repository}
-        II(Interactor Instance)
+        II[Interactor Instance]
     end
 
     subgraph " "
         DB[(Database)]
         C[(Cache)]
         N[(Network)]
-        RI(Repository Instance)
+        RI[Repository Instance]
         RI <==> DB & C & N
     end
 
@@ -143,7 +145,9 @@ graph TD
 Implement Repository interface with mock instance
 ```mermaid
 graph TD
-    AI[AppState Instance]
+    subgraph " "
+        AI[AppState Instance]
+    end
 
     subgraph Dependency Injector
         I{Interactor}
@@ -153,10 +157,11 @@ graph TD
     subgraph " "
         AD{AppState\nDelegate}
         R{Repository}
-        II(Interactor Instance)
+        II[Interactor Instance]
     end
 
-    RI[/Mock Repository Instance/]
+
+    RI((Mock Repository Instance))
 
     View ==>|UI Operation| I ==>|UI Operation| II 
     View <-.->|Data\nBinding| A -.-|Implementation| AI
@@ -173,14 +178,17 @@ graph TD
 Implement Interactor interface with mock instance
 ```mermaid
 graph TD
-    AI[AppState Instance]
+    subgraph " "
+        AI[AppState Instance]
+    end
 
     subgraph Dependency Injector
         I{Interactor}
         A{AppState}
     end
+    
 
-    II[/Mock Interactor Instance/]
+    II((Mock Interactor Instance))
 
     View ==>|UI Operation| I ==>|UI Operation| II ==>|Update State| AI
     View <-.->|Data\nBinding| A -.-|Implementation| AI
