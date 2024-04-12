@@ -30,7 +30,7 @@ graph LR
 ## Directory Structure
 > The node is a file when it has file extension.</br> 
 > Otherwise, the node represents a directory.
-```shell
+```bash
 |
 |__ UI  # SwiftUI Views
 |
