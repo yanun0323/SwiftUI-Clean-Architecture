@@ -9,11 +9,10 @@ graph LR
     A[AppState]
     I[Interactor]
     R[Repository]
-    DB[(DB)]
 
-    A -->|Data Binding| UI -->|Invoke Operation| I
-    I -->|Update Data| A 
-    I -->|CURD Resource| R --- DB & Network
+    A -->|Data Binding| UI -->|UI Operation| I
+    I -->|Update State| A 
+    I -->|CURD Resource| R
 ```
 - #### `View` 
     View represents SwiftUI view structure.
