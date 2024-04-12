@@ -62,7 +62,7 @@ graph LR
         |__ Repository  // Repository implementation
         |       |
         |       |__ Mock                        // Repository mocked instance
-        |       |__ SQLite                      // Repository sqlite instance
+        |       |__ General                     // Repository general instance
         |
         |__ Util        // Utilities
 ```

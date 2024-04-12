@@ -172,7 +172,7 @@
 			children = (
 				A82564F82BC9690C003523BC /* Helper */,
 				A83DD0982BC97A0F00156929 /* Mock */,
-				A82564FD2BC97743003523BC /* SQLite */,
+				A82564FD2BC97743003523BC /* General */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -202,13 +202,13 @@
 			path = General;
 			sourceTree = "<group>";
 		};
-		A82564FD2BC97743003523BC /* SQLite */ = {
+		A82564FD2BC97743003523BC /* General */ = {
 			isa = PBXGroup;
 			children = (
 				A82564ED2BC9518C003523BC /* GeneralRepository.swift */,
 				A82564F32BC958C5003523BC /* GeneralTodoRepository.swift */,
 			);
-			path = SQLite;
+			path = General;
 			sourceTree = "<group>";
 		};
 		A83DD0972BC97A0A00156929 /* Mock */ = {
