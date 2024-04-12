@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct GeneralTodoInteractor {
-    private let state: AppStateContainer
+    private let state: AppStateDelegate
     private let repo: Repository
     
-    init(state: AppStateContainer, repo: Repository) {
+    init(state: AppStateDelegate, repo: Repository) {
         self.state = state
         self.repo = repo
     }

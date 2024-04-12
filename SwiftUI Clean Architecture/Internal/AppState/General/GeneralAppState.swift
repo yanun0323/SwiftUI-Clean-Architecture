@@ -1,7 +1,7 @@
 import SwiftUI
 import Combine
 
-struct GeneralAppState: AppStateContainer {
+struct GeneralAppState: AppStateDelegate {
     var todoListStored = Store<[Todo]>([])
     var errorChannel = Channel<Error>()
 }

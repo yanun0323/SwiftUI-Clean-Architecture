@@ -26,7 +26,7 @@
 		A83DD09B2BC97C0600156929 /* ContainerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD09A2BC97C0600156929 /* ContainerEnvironment.swift */; };
 		A83DD09D2BC97D2100156929 /* MockAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD09C2BC97D2100156929 /* MockAppState.swift */; };
 		A83DD09F2BC97D4600156929 /* MockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD09E2BC97D4600156929 /* MockInteractor.swift */; };
-		A83DD0A12BC97D6900156929 /* AppStateContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD0A02BC97D6900156929 /* AppStateContainer.swift */; };
+		A83DD0A12BC97D6900156929 /* AppStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD0A02BC97D6900156929 /* AppStateDelegate.swift */; };
 		A83DD0A32BC98C7E00156929 /* MockTodoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD0A22BC98C7E00156929 /* MockTodoInteractor.swift */; };
 		A83DD0A52BC98D5600156929 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD0A42BC98D5600156929 /* MockRepository.swift */; };
 		A83DD0A72BC98D5E00156929 /* MockTodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83DD0A62BC98D5E00156929 /* MockTodoRepository.swift */; };
@@ -53,7 +53,7 @@
 		A83DD09A2BC97C0600156929 /* ContainerEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerEnvironment.swift; sourceTree = "<group>"; };
 		A83DD09C2BC97D2100156929 /* MockAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppState.swift; sourceTree = "<group>"; };
 		A83DD09E2BC97D4600156929 /* MockInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInteractor.swift; sourceTree = "<group>"; };
-		A83DD0A02BC97D6900156929 /* AppStateContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateContainer.swift; sourceTree = "<group>"; };
+		A83DD0A02BC97D6900156929 /* AppStateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateDelegate.swift; sourceTree = "<group>"; };
 		A83DD0A22BC98C7E00156929 /* MockTodoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoInteractor.swift; sourceTree = "<group>"; };
 		A83DD0A42BC98D5600156929 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
 		A83DD0A62BC98D5E00156929 /* MockTodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoRepository.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		A82564E52BC94F52003523BC /* AppState */ = {
 			isa = PBXGroup;
 			children = (
-				A83DD0A02BC97D6900156929 /* AppStateContainer.swift */,
+				A83DD0A02BC97D6900156929 /* AppStateDelegate.swift */,
 				A83DD0992BC97A1B00156929 /* Mock */,
 				A82564FB2BC97730003523BC /* General */,
 			);
@@ -340,7 +340,7 @@
 				A82564FA2BC96B19003523BC /* TodoModel.swift in Sources */,
 				A82564E92BC95171003523BC /* GeneralAppState.swift in Sources */,
 				A82564DF2BC94EFF003523BC /* AppState.swift in Sources */,
-				A83DD0A12BC97D6900156929 /* AppStateContainer.swift in Sources */,
+				A83DD0A12BC97D6900156929 /* AppStateDelegate.swift in Sources */,
 				A82564EE2BC9518C003523BC /* GeneralRepository.swift in Sources */,
 				A82564F02BC9520F003523BC /* Todo.swift in Sources */,
 			);

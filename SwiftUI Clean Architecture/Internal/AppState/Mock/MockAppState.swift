@@ -1,7 +1,7 @@
 import SwiftUI
 import Combine
 
-struct MockAppState: AppStateContainer {
+struct MockAppState: AppStateDelegate {
     var todoListStored = Store<[Todo]>([])
     var errorChannel = Channel<Error>()
 }
